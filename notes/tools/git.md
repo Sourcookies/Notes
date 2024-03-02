@@ -134,8 +134,8 @@ git remote add name（远程仓库）URL    与远程仓库连接
 
 
 ```
-git push <remote> <local branch>:<remote branch>
-:
+git push <remote reponame><local branch>:<remote branch> :
+
 git push origin(远程仓库名) master:master
 git push -f origin master:master
 //本地文件强制覆盖远程
