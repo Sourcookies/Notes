@@ -67,27 +67,17 @@ int main()
 }
 ```
 
-
-
-更相减损术：
-
-```c
-int gcd(int a,int b){
-    while (true)//用大数减去小数并将结果保存起来
-    {
-        if (a > b)
-        {
-            a -= b;
-        }
-        else if(a < b)
-        {
-            b -= a;
-        }
-        else//如果两个数相等时，则这个数就是最大公约数
-        {
-            return a;
-        }
-    }
-}
+```python
+2：
+def gcd(n, d):
+	while n != d:
+		n, d = min(n, d), abs(n-d)
+	return n
 ```
+
+
+
+
+
+
 
