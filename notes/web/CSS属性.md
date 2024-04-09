@@ -12,17 +12,22 @@ list-style-type
 font-style:italic  斜体
 ```
 
-```markdown
+
+
 通用选择器：
+
+```markdown
 *{
 margin:0px;
 padding:0px;
 }
 ```
 
-```markdown
+
+
 复合选择器：
 
+```markdown
 交集
 p.txt{}
 
