@@ -12,6 +12,19 @@
 `(a , (+ b 1)) => (a 5)
 ```
 
+
+
+两种定义方式：
+
+```
+scm> (define foo (lambda (x y) (+ x y)))
+foo
+scm> (define (foo x y) (+ x y))
+foo
+```
+
+
+
 while statements:
 
 ```scheme
@@ -27,6 +40,7 @@ while x < 10:
 		(if (< x 10)
 			(f (+ x 2) (+ total (* x x)))
 			total))	 #x>10:return total
-		(f 2 0)))	
+	
+> (f 2 0)))	
 ```
 
