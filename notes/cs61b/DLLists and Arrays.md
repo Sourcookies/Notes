@@ -24,8 +24,8 @@ loitering(徘徊)：
 
 ```java
 保持对不需要的对象的引用
-当remove int数组时，数组只要size--，不需要改变数组中的值，因为add数时会将其覆盖，但为泛型数组时，内存占用太大，需要改变
- /*泛型数组可能更占空间，所以将其置null*/
+当remove int数组时，数组只要size--，不需要改变数组中的值，因为add数时会将其覆盖，但为数组里为泛型时，内存可能(类型为对象数组时)占用太大，需要改变
+ /*带泛型的数组可能更占空间，所以将其置null*/
     public Item removeLast(){
         Item returnItem = getLast();
         items[size - 1] = null;
